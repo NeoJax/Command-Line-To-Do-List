@@ -1,7 +1,7 @@
 const fs = require('fs');
 const command = process.argv[2];
 const string = process.argv[3];
-var list = fs.readFileSync("list.txt").toString().split(",");
+var list = fs.readFileSync("clients.txt").toString().split("}");
 var tasks = list.length-1;
 console.log(list);
 if(list[0] == ''){
